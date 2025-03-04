@@ -1,48 +1,24 @@
-# README: Time and Distance Matrices for VRP and Statistical Analysis
+# README: Time and Distance Matrices for VRP and Statistical Analysis  
 
-## Overview
+## Overview  
 
-This repository contains time and distance matrices in Excel format, which were used for a Vehicle Routing Problem (VRP) study. The dataset can also be useful for statistical analysis, such as modeling travel time distributions. The data were used in an article submitted to *Data in Brief* and are available in the Zenodo repository.
+This repository provides an example script for analyzing time and distance matrices used in a Vehicle Routing Problem (VRP) study. Hosted on Zenodo, the dataset is valuable not only for VRP research but also for statistical analysis, including travel time distribution modeling. The example code in this repository focuses on statistical analysis, demonstrating how to read the Excel files containing travel time data, store the information in DataFrames, and compute key statistical metrics. It was used in an article submitted to Data in Brief.
 
-## Dataset Description
+## Dataset Access  
 
-The dataset represents approximately one month of routing operations for a pharmaceutical delivery company. Since deliveries occur twice per week, the dataset includes nine (9) distinct daily instances, covering around four to five weeks of real-world operations. Each instance accounts for operational constraints, such as order demands, time windows, distances, and travel times under different traffic conditions.
+The dataset is not stored in this repository but can be downloaded from Zenodo. To streamline access, an SSH script (`setup_data_access.sh`) is included. This script automates the process of retrieving the dataset and ensuring compatibility with the provided example code.  
 
-## Folder Structure
+## Example Code  
 
-The repository contains two main folders:
+The repository includes a Python script (`usage_example.py`) demonstrating how to:  
 
-### 1. **Time and Distance Matrices**
+- Load time and distance matrices from the Zenodo dataset  
+- Parse the data into Pandas DataFrames  
+- Analyze travel times using different traffic conditions  
+- Compute mean and standard deviation for travel time distributions  
 
-This folder contains travel distances and estimated travel times between delivery locations for each of the nine daily instances. To ensure confidentiality, exact node locations are not included.
+## Running the Example  
 
-#### Files in this folder:
-
-Each dataset version (1-9) consists of four corresponding Excel files:
-
-- `distance_matrix_X.xlsx` – Pairwise distances (in kilometers) between delivery locations.
-- `time_matrix_mostlikely_X.xlsx` – Expected travel time (minutes) under typical traffic conditions.
-- `time_matrix_optimistic_X.xlsx` – Best-case travel time (minutes) with minimal traffic.
-- `time_matrix_pessimistic_X.xlsx` – Worst-case travel time (minutes) with heavy traffic delays.
-
-Where **X** represents the dataset number (1-9).
-
-### 2. **Order Characteristics**
-
-This folder contains an Excel file (`orders.xlsx`) with nine sheets, each corresponding to a specific day's delivery requests. The file includes the following columns:
-
-| Column Name   | Description                                          |
-| ------------- | ---------------------------------------------------- |
-| NODE\_ID      | Unique identifier for each delivery request          |
-| WEIGHT        | Weight of the shipment (kg)                          |
-| VOLUME        | Volume of the shipment (cubic meters)                |
-| SERVICE\_TIME | Time required to complete the delivery (minutes)     |
-| EAT           | Earliest arrival time allowed for delivery           |
-| LAT           | Latest arrival time allowed for delivery             |
-| TIME\_WINDOW  | Allowed delivery time window, defined by EAT and LAT |
-
-## Example Code
-
-A Python script (usage_example.py) is provided to demonstrate how to read the Excel files, parse the data, and store it as Pandas DataFrames for further manipulation and analysis. While the dataset is primarily used for Vehicle Routing Problem (VRP), this script illustrates how to extract and process travel time data from the uploaded Excel files. It uses the three different time matrices for each instance to calculate the mean and standard deviation of travel time between all node combinations for both triangular and beta distributions. 
-
-
+1. Run the SSH script to download and set up the dataset:  
+   ```bash
+   bash setup_data_access.sh
