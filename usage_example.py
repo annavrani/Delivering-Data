@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 # Load Excel files (update filenames as needed)
-file_optimistic = "C:/Users/annav/OneDrive/Υπολογιστής/time and distance matrices/day_1/time_matrix_optimistic_1.xlsx"
-file_most_likely = "C:/Users/annav/OneDrive/Υπολογιστής/time and distance matrices/day_1/time_matrix_mostlikely_1.xlsx"
-file_pessimistic = "C:/Users/annav/OneDrive/Υπολογιστής/time and distance matrices/day_1/time_matrix_pessimistic_1.xlsx"
+file_optimistic = "insert file optimistic"
+file_most_likely = "insert file most likely"
+file_pessimistic = "insert file pessimistic"
 
 df_opt = pd.read_excel(file_optimistic, index_col=0)
 df_most = pd.read_excel(file_most_likely, index_col=0)
