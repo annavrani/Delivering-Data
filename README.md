@@ -6,7 +6,7 @@ This repository contains time and distance matrices in Excel format, which were 
 
 ## Dataset Description
 
-The dataset represents approximately one month of routing operations for a pharmaceutical delivery company. Since deliveries occur twice per week, the dataset includes nine (9) distinct daily instances, covering around four to five weeks of real-world operations. Each instance accounts for operational constraints, such as order demands, distances, and travel times under different traffic conditions.
+The dataset represents approximately one month of routing operations for a pharmaceutical delivery company. Since deliveries occur twice per week, the dataset includes nine (9) distinct daily instances, covering around four to five weeks of real-world operations. Each instance accounts for operational constraints, such as order demands, time windows, distances, and travel times under different traffic conditions.
 
 ## Folder Structure
 
@@ -43,6 +43,6 @@ This folder contains an Excel file (`orders.xlsx`) with nine sheets, each corres
 
 ## Example Code
 
-A Python script is provided to demonstrate how to read the Excel files and perform statistical analysis on travel times using triangular and beta distributions.
+A Python script (usage_example.py) is provided to demonstrate how to read the Excel files and parse the data for further analysis. While the dataset is primarily used for Vehicle Routing Problem (VRP), this script illustrates how to extract and process travel time data from the uploaded Excel files, using the three different time matrices for each instance to calculate the mean and standard deviation of travel time between all node combinations for both triangular and beta distributions. 
 
 
