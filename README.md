@@ -43,6 +43,6 @@ This folder contains an Excel file (`orders.xlsx`) with nine sheets, each corres
 
 ## Example Code
 
-A Python script (usage_example.py) is provided to demonstrate how to read the Excel files and parse the data for further analysis. While the dataset is primarily used for Vehicle Routing Problem (VRP), this script illustrates how to extract and process travel time data from the uploaded Excel files, using the three different time matrices for each instance to calculate the mean and standard deviation of travel time between all node combinations for both triangular and beta distributions. 
+A Python script (usage_example.py) is provided to demonstrate how to read the Excel files, parse the data, and store it as Pandas DataFrames for further manipulation and analysis. While the dataset is primarily used for Vehicle Routing Problem (VRP), this script illustrates how to extract and process travel time data from the uploaded Excel files. It uses the three different time matrices for each instance to calculate the mean and standard deviation of travel time between all node combinations for both triangular and beta distributions. 
 
 
