@@ -1,4 +1,4 @@
-# README: Delivering Data: A Real-World Dataset for Last-Mile Delivery Optimization 
+# Delivering Data: A Real-World Dataset for Last-Mile Delivery Optimization 
 
 ## Overview  
 
