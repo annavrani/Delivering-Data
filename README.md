@@ -2,14 +2,14 @@
 
 ## Overview  
 
-This repository provides scripts to download, extract, and analyze a dataset that includes time and distance matrices used in a Vehicle Routing Problem (VRP) study. Hosted on [Zenodo](https://zenodo.org/uploads/15310106), the dataset is valuable not only for VRP research but also for statistical analysis, including travel time distribution modeling. In addition to scripts for downloading and extracting the data, this repository includes a script for statistical analysis and an example script demonstrating how to download the data and analyze the first day's records. The provided scripts can be adapted for any desired data processing after loading the required information into DataFrames.
+This repository provides scripts to download, extract, and analyze a dataset that includes time and distance matrices used in a Vehicle Routing Problem (VRP) study. Hosted on [Zenodo](https://zenodo.org/records/15310106), the dataset is valuable not only for VRP research but also for statistical analysis, including travel time distribution modeling. In addition to scripts for downloading and extracting the data, this repository includes a script for statistical analysis and an example script demonstrating how to download the data and analyze the first day's records. The provided scripts can be adapted for any desired data processing after loading the required information into DataFrames.
 
-The [dataset](https://zenodo.org/uploads/15310106) is submitted for publication in 
+The [dataset](https://zenodo.org/records/15310106) is submitted for publication in 
 [Data in Brief Journal](https://www.sciencedirect.com/journal/data-in-brief).
 
 ## Dataset Access  
 
-The dataset is not stored in this repository but can be downloaded from [Zenodo](https://zenodo.org/uploads/15310106). The 'download_and_extract_data.py' script automates the process of downloading and extracting the data. You can run this script directly or include the following code in your own script to perform the download and extraction:
+The dataset is not stored in this repository but can be downloaded from [Zenodo](https://zenodo.org/records/15310106). The 'download_and_extract_data.py' script automates the process of downloading and extracting the data. You can run this script directly or include the following code in your own script to perform the download and extraction:
 
 ````
 import download_and_extract_data
