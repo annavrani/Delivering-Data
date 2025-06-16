@@ -51,7 +51,7 @@ The `example_day_1.py` script combines the two code blocks presented above to pr
 
 ## Cite as:
 
-*Vrani, A., Apostolidis, S. D., Kapoutsis, A. Ch., & Kosmatopoulos, E. B. (2025). Delivering data: A real-world dataset for last-mile delivery optimization. Data in Brief, 61, 111762. \[[Link](https://doi.org/10.1016/j.dib.2025.111762)\]
+*Vrani, A., Apostolidis, S. D., Kapoutsis, A. Ch., & Kosmatopoulos, E. B. (2025). Delivering data: A real-world dataset for last-mile delivery optimization. Data in Brief, 61, 111762.* \[[Link](https://doi.org/10.1016/j.dib.2025.111762)\]
 ```bibtex
 @article{VRANI2025111762,
 title = {Delivering data: A real-world dataset for last-mile delivery optimization},
